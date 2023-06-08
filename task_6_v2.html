@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <script>
+      var storedItem = ["apple", "smoked", "plumed", "marinated", "piggy"];
+      var storedItemCharacteristics = [
+        "wine",
+        "meat",
+        "marmalade",
+        "peppers",
+        "bank",
+      ];
+      var storedItemQuantity = [10, 5, 9, 4, 184.34];
+      var storedItemID = ["C7544", "M7441", "S6491", "P7485", "B6584"];
+
+      function printSerialNumbers() {
+        for (let i = 0; i < storedItem.length; i++) {
+          let serialNumber = `${storedItem[i]} ${storedItemCharacteristics[i]} ${storedItemID[i]}_${storedItemQuantity[i]}`;
+          console.log(serialNumber);
+        }
+      }
+
+      printSerialNumbers();
+    </script>
+  </head>
+  <body></body>
+</html>
